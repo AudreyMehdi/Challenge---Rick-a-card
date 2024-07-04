@@ -11,8 +11,8 @@ export class CharacterService {
   constructor(private http: HttpClient) { }
 
   getAllCharacters(): Observable<Character> {
-  
-    return this.http.get<any>('https://rickandmortyapi.com/api/character/2');
+  const randomId = Math.floor(Math.random() * 826) + 1;
+    return this.http.get<Character>(`https://rickandmortyapi.com/api/character/${randomId}`);
   }
 
 }

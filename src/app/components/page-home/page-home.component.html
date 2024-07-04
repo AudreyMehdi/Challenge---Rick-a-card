@@ -1,3 +1,11 @@
-<p>page-home works!</p>
-<h1>bijour2333</h1>
-<h2>fr,vrir</h2>
+<button (click)="getRandomCharacter()" [disabled]="!canClickButton">Afficher/Cacher la div</button>
+<div *ngIf="character">
+  <img [src]="character.image" />
+  <p>{{ character.name }}</p>
+  <p>{{ character.species }}</p>
+  <p>{{ character.status }}</p>
+  <p>{{ character.id }}</p>
+</div>
+<div *ngIf="!canClickButton">
+  Vous devez attendre : {{ formatTime(countdown) }}
+</div>
