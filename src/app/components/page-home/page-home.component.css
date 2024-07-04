@@ -1,0 +1,118 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Utilise toute la hauteur de la fenêtre */
+    background: linear-gradient(135deg, #f7b733, #fc4a1a); /* Dégradé de jaune */
+  }
+  
+  .custom-card {
+    border-radius: 8px;
+    overflow: hidden;
+    width: 80%; /* Ajustez la largeur selon vos besoins */
+    max-width: 600px; /* Largeur maximale de la carte */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+    display: flex;
+    flex-direction: column;
+    background-color: #2b2929; /* Couleur de fond sombre */
+  }
+  
+  .custom-card-header {
+    background-color: #add8e6; /* Bleu pastel */
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .custom-card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments horizontalement */
+  }
+  
+  .card-content {
+    width: 100%; /* Pour s'assurer que le contenu de la carte est plein */
+    text-align: center; /* Centrer le texte à l'intérieur de la carte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .custom-card-content {
+    margin-top: 10px;
+    color: #ffffff; /* Couleur de texte */
+    font-family: 'Creepster', cursive; /* Police de caractères avec style de film d'horreur */
+  }
+  
+  .custom-card-content p {
+    margin: 5px 0;
+    font-size: 20px; /* Taille de texte plus grande */
+  }
+  
+  .custom-card-content .blue-text {
+    color: #00bfff; /* Couleur bleu ciel */
+    font-weight: bold; /* Texte en gras */
+    font-size: 22px; /* Taille de texte plus grande */
+    text-transform: uppercase; /* Texte en majuscules */
+  }
+  
+  .custom-card-footer {
+    background-color: #add8e6; /* Bleu pastel */
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .custom-card .card-image {
+    max-width: 100%; /* Largeur maximale de l'image ajustée */
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .custom-button {
+    width: 100px; /* Largeur du bouton */
+    height: 100px; /* Hauteur du bouton */
+    background-color: #00bfff; /* Couleur de fond bleu ciel */
+    border: none; /* Pas de bordure */
+    border-radius: 50%; /* Bordure arrondie pour former un cercle */
+    cursor: pointer;
+    color: #fff; /* Couleur du texte */
+    font-size: 16px; /* Taille du texte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    margin-top: 20px; /* Marge supérieure pour séparer du contenu précédent */
+  }
+  
+  .custom-button:hover {
+    background-color: #3b3838; /* Couleur de fond au survol */
+  }
+  
+  .hourglass-container {
+    display: flex; /* Utilisation de Flexbox pour aligner les sabliers */
+    margin-bottom: 10px;
+  }
+  
+  .hourglass {
+    width: 20px; /* Largeur du sablier */
+    height: 20px; /* Hauteur du sablier */
+    border: 4px solid transparent;
+    border-top-color: #ff0000; /* Couleur rouge du sablier */
+    border-radius: 50%;
+    animation: hourglass-spin 1s linear infinite; /* Animation de rotation infinie */
+    margin-right: 10px; /* Espace à droite du sablier */
+  }
+  
+  @keyframes hourglass-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
